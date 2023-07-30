@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SystemTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="LearnTest(failed)">
+    <classes>
+      <class name="com.trello.qspiders.learntesting.DataDrivenTestingByClass">
+        <methods>
+          <include name="supplyDataToMe"/>
+        </methods>
+      </class> <!-- com.trello.qspiders.learntesting.DataDrivenTestingByClass -->
+    </classes>
+  </test> <!-- LearnTest(failed) -->
+</suite> <!-- Failed suite [SystemTesting] -->

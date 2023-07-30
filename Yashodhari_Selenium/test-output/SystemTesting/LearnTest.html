@@ -1,0 +1,284 @@
+<html>
+<head>
+<title>TestNG:  LearnTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>LearnTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>32/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Mar 25 13:43:44 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17795 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DataDrivenTestingByClass.supplyDataToMe()'><b>supplyDataToMe</b><br>Test class: com.trello.qspiders.learntesting.DataDrivenTestingByClass</td>
+<td><div><pre>org.testng.TestNGException: 
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace694452085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace694452085'><pre>org.testng.TestNGException: 
+Method public void com.trello.qspiders.learntesting.DataDrivenTestingByClass.supplyDataToMe(java.lang.String,java.lang.String,java.lang.String,java.lang.String) requires a @DataProvider named : dataStorageInDiffClass in class org.testng.annotations.DataProvider
+	at org.testng.internal.Parameters.findDataProvider(Parameters.java:526)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:763)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DataDrivenTestingByClass@2a3b5b47</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass.bananaTest()'><b>bananaTest</b><br>Test class: com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass@293a5bf6</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.CSSselectorTest()'><b>CSSselectorTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UserDefinedOrder.SQLTest()'><b>SQLTest</b><br>Test class: com.trello.qspiders.learntesting.UserDefinedOrder</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.UserDefinedOrder@35d019a3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.JavaScriptTest()'><b>JavaScriptTest</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UserDefinedOrder.APITest()'><b>APITest</b><br>Test class: com.trello.qspiders.learntesting.UserDefinedOrder</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.UserDefinedOrder@35d019a3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UserDefinedOrder.ProjectTest()'><b>ProjectTest</b><br>Test class: com.trello.qspiders.learntesting.UserDefinedOrder</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.UserDefinedOrder@35d019a3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.CSSTest()'><b>CSSTest</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UserDefinedOrder.SeleniumTest()'><b>SeleniumTest</b><br>Test class: com.trello.qspiders.learntesting.UserDefinedOrder</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.UserDefinedOrder@35d019a3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass.grapesTest()'><b>grapesTest</b><br>Test class: com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass@293a5bf6</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.JQuery()'><b>JQuery</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UserDefinedOrder.QspiderTest()'><b>QspiderTest</b><br>Test class: com.trello.qspiders.learntesting.UserDefinedOrder</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.UserDefinedOrder@35d019a3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.StrategiesOfLocatorsTest()'><b>StrategiesOfLocatorsTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.HTML()'><b>HTML</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.JavaScriptTest()'><b>JavaScriptTest</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.SeleniumConceptTest()'><b>SeleniumConceptTest</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.partiallLinkTest()'><b>partiallLinkTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UserDefinedOrder.ManualTest()'><b>ManualTest</b><br>Test class: com.trello.qspiders.learntesting.UserDefinedOrder</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.UserDefinedOrder@35d019a3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass.appleTest()'><b>appleTest</b><br>Test class: com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass@293a5bf6</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.nameTest()'><b>nameTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.tagNameTest()'><b>tagNameTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.ClassNameTest()'><b>ClassNameTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass.mangoTest()'><b>mangoTest</b><br>Test class: com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass@293a5bf6</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass.orrengeTest()'><b>orrengeTest</b><br>Test class: com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.WhatIfMultipleTestAnnotationsINTheClass@293a5bf6</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.linktextTest()'><b>linktextTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.JSON()'><b>JSON</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UsageOfBeforeAndAfterMethod.testcase()'><b>testcase</b><br>Test class: com.trello.qspiders.learntesting.UsageOfBeforeAndAfterMethod</td>
+<td></td>
+<td>5</td>
+<td>com.trello.qspiders.learntesting.UsageOfBeforeAndAfterMethod@145f66e3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.StrategiesOfLocatorsTest()'><b>StrategiesOfLocatorsTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.SeleniumConceptTest()'><b>SeleniumConceptTest</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.IdTest()'><b>IdTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.DisableTestCaseFromExecution.XpathTest()'><b>XpathTest</b><br>Test class: com.trello.qspiders.learntesting.DisableTestCaseFromExecution</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.DisableTestCaseFromExecution@689604d9</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.UserDefinedOrder.JavaTest()'><b>JavaTest</b><br>Test class: com.trello.qspiders.learntesting.UserDefinedOrder</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.UserDefinedOrder@35d019a3</td></tr>
+<tr>
+<td title='com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes.JavaScriptTest()'><b>JavaScriptTest</b><br>Test class: com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes</td>
+<td></td>
+<td>0</td>
+<td>com.trello.qspiders.learntesting.ExecuteSameTestcaseMultipleTimes@55b699ef</td></tr>
+</table><p>
+</body>
+</html>

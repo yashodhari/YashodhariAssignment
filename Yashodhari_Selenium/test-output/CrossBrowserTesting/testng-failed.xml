@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [CrossBrowserTesting]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="firefoxTest(failed)">
+    <parameter name="BrowserName" value="firefox"/>
+    <parameter name="password" value="manager"/>
+    <parameter name="Url" value="https://demo.actitime.com/login.do"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="com.trello.qspiders.learntesting.OneGoodAutomationScript">
+        <methods>
+          <include name="actitimeLoginLogout" invocation-numbers="0"/>
+          <include name="cofigAfterMethod"/>
+          <include name="configBeforeMethod"/>
+        </methods>
+      </class> <!-- com.trello.qspiders.learntesting.OneGoodAutomationScript -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserTesting] -->
